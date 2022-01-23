@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "676988433412",
+    "project_id": "hermosa-a3eec",
+    "storage_bucket": "hermosa-a3eec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676988433412:android:51243851c27b7491b1f151",
+        "android_client_info": {
+          "package_name": "com.pubmarkstore.hermosa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676988433412-im4u3t4f2aigkq7p405n7ci6t8q4ngeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pubmarkstore.hermosa",
+            "certificate_hash": "42b6abe61d1cf0b614c0b94c9077ab5a8e95e891"
+          }
+        },
+        {
+          "client_id": "676988433412-e3ibs4puc30g9pbjl5on767cbivsfv4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbIbFtkSg7TMulruBtzk3pS3oAJyOdgl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676988433412-e3ibs4puc30g9pbjl5on767cbivsfv4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
