@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'auth_event.dart';
+part of 'auth_form_event.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,8 +15,8 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$AuthEventTearOff {
-  const _$AuthEventTearOff();
+class _$AuthFormEventTearOff {
+  const _$AuthFormEventTearOff();
 
   SignInWithGooglePressed signInWithGooglePresseed() {
     return const SignInWithGooglePressed();
@@ -36,10 +36,10 @@ class _$AuthEventTearOff {
 }
 
 /// @nodoc
-const $AuthEvent = _$AuthEventTearOff();
+const $AuthFormEvent = _$AuthFormEventTearOff();
 
 /// @nodoc
-mixin _$AuthEvent {
+mixin _$AuthFormEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePresseed,
@@ -97,18 +97,20 @@ mixin _$AuthEvent {
 }
 
 /// @nodoc
-abstract class $AuthEventCopyWith<$Res> {
-  factory $AuthEventCopyWith(AuthEvent value, $Res Function(AuthEvent) then) =
-      _$AuthEventCopyWithImpl<$Res>;
+abstract class $AuthFormEventCopyWith<$Res> {
+  factory $AuthFormEventCopyWith(
+          AuthFormEvent value, $Res Function(AuthFormEvent) then) =
+      _$AuthFormEventCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthEventCopyWithImpl<$Res> implements $AuthEventCopyWith<$Res> {
-  _$AuthEventCopyWithImpl(this._value, this._then);
+class _$AuthFormEventCopyWithImpl<$Res>
+    implements $AuthFormEventCopyWith<$Res> {
+  _$AuthFormEventCopyWithImpl(this._value, this._then);
 
-  final AuthEvent _value;
+  final AuthFormEvent _value;
   // ignore: unused_field
-  final $Res Function(AuthEvent) _then;
+  final $Res Function(AuthFormEvent) _then;
 }
 
 /// @nodoc
@@ -120,7 +122,7 @@ abstract class $SignInWithGooglePressedCopyWith<$Res> {
 
 /// @nodoc
 class _$SignInWithGooglePressedCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements $SignInWithGooglePressedCopyWith<$Res> {
   _$SignInWithGooglePressedCopyWithImpl(SignInWithGooglePressed _value,
       $Res Function(SignInWithGooglePressed) _then)
@@ -137,7 +139,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
 
   @override
   String toString() {
-    return 'AuthEvent.signInWithGooglePresseed()';
+    return 'AuthFormEvent.signInWithGooglePresseed()';
   }
 
   @override
@@ -228,7 +230,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
   }
 }
 
-abstract class SignInWithGooglePressed implements AuthEvent {
+abstract class SignInWithGooglePressed implements AuthFormEvent {
   const factory SignInWithGooglePressed() = _$SignInWithGooglePressed;
 }
 
@@ -241,7 +243,7 @@ abstract class $SignInWithFaceboolPressedCopyWith<$Res> {
 
 /// @nodoc
 class _$SignInWithFaceboolPressedCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements $SignInWithFaceboolPressedCopyWith<$Res> {
   _$SignInWithFaceboolPressedCopyWithImpl(SignInWithFaceboolPressed _value,
       $Res Function(SignInWithFaceboolPressed) _then)
@@ -259,7 +261,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
 
   @override
   String toString() {
-    return 'AuthEvent.signInWithFacebookPressed()';
+    return 'AuthFormEvent.signInWithFacebookPressed()';
   }
 
   @override
@@ -351,7 +353,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
   }
 }
 
-abstract class SignInWithFaceboolPressed implements AuthEvent {
+abstract class SignInWithFaceboolPressed implements AuthFormEvent {
   const factory SignInWithFaceboolPressed() = _$SignInWithFaceboolPressed;
 }
 
@@ -364,7 +366,7 @@ abstract class $AuthCheckRequestedCopyWith<$Res> {
 
 /// @nodoc
 class _$AuthCheckRequestedCopyWithImpl<$Res>
-    extends _$AuthEventCopyWithImpl<$Res>
+    extends _$AuthFormEventCopyWithImpl<$Res>
     implements $AuthCheckRequestedCopyWith<$Res> {
   _$AuthCheckRequestedCopyWithImpl(
       AuthCheckRequested _value, $Res Function(AuthCheckRequested) _then)
@@ -381,7 +383,7 @@ class _$AuthCheckRequested implements AuthCheckRequested {
 
   @override
   String toString() {
-    return 'AuthEvent.authCheckRequested()';
+    return 'AuthFormEvent.authCheckRequested()';
   }
 
   @override
@@ -472,7 +474,7 @@ class _$AuthCheckRequested implements AuthCheckRequested {
   }
 }
 
-abstract class AuthCheckRequested implements AuthEvent {
+abstract class AuthCheckRequested implements AuthFormEvent {
   const factory AuthCheckRequested() = _$AuthCheckRequested;
 }
 
@@ -483,7 +485,7 @@ abstract class $SignedOutCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SignedOutCopyWithImpl<$Res> extends _$AuthEventCopyWithImpl<$Res>
+class _$SignedOutCopyWithImpl<$Res> extends _$AuthFormEventCopyWithImpl<$Res>
     implements $SignedOutCopyWith<$Res> {
   _$SignedOutCopyWithImpl(SignedOut _value, $Res Function(SignedOut) _then)
       : super(_value, (v) => _then(v as SignedOut));
@@ -499,7 +501,7 @@ class _$SignedOut implements SignedOut {
 
   @override
   String toString() {
-    return 'AuthEvent.signedOut()';
+    return 'AuthFormEvent.signedOut()';
   }
 
   @override
@@ -590,6 +592,6 @@ class _$SignedOut implements SignedOut {
   }
 }
 
-abstract class SignedOut implements AuthEvent {
+abstract class SignedOut implements AuthFormEvent {
   const factory SignedOut() = _$SignedOut;
 }

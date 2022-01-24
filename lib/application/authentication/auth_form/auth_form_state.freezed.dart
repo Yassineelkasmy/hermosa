@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'auth_state.dart';
+part of 'auth_form_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,14 +15,14 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$AuthStateTearOff {
-  const _$AuthStateTearOff();
+class _$AuthFormStateTearOff {
+  const _$AuthFormStateTearOff();
 
-  _AuthState call(
+  _AuthFormState call(
       {required bool isSubmitting,
       required bool showError,
       required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption}) {
-    return _AuthState(
+    return _AuthFormState(
       isSubmitting: isSubmitting,
       showError: showError,
       authFailureOrSuccessOption: authFailureOrSuccessOption,
@@ -31,24 +31,25 @@ class _$AuthStateTearOff {
 }
 
 /// @nodoc
-const $AuthState = _$AuthStateTearOff();
+const $AuthFormState = _$AuthFormStateTearOff();
 
 /// @nodoc
-mixin _$AuthState {
+mixin _$AuthFormState {
   bool get isSubmitting => throw _privateConstructorUsedError;
   bool get showError => throw _privateConstructorUsedError;
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $AuthStateCopyWith<AuthState> get copyWith =>
+  $AuthFormStateCopyWith<AuthFormState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $AuthStateCopyWith<$Res> {
-  factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) then) =
-      _$AuthStateCopyWithImpl<$Res>;
+abstract class $AuthFormStateCopyWith<$Res> {
+  factory $AuthFormStateCopyWith(
+          AuthFormState value, $Res Function(AuthFormState) then) =
+      _$AuthFormStateCopyWithImpl<$Res>;
   $Res call(
       {bool isSubmitting,
       bool showError,
@@ -56,12 +57,13 @@ abstract class $AuthStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AuthStateCopyWithImpl<$Res> implements $AuthStateCopyWith<$Res> {
-  _$AuthStateCopyWithImpl(this._value, this._then);
+class _$AuthFormStateCopyWithImpl<$Res>
+    implements $AuthFormStateCopyWith<$Res> {
+  _$AuthFormStateCopyWithImpl(this._value, this._then);
 
-  final AuthState _value;
+  final AuthFormState _value;
   // ignore: unused_field
-  final $Res Function(AuthState) _then;
+  final $Res Function(AuthFormState) _then;
 
   @override
   $Res call({
@@ -87,10 +89,11 @@ class _$AuthStateCopyWithImpl<$Res> implements $AuthStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$AuthStateCopyWith<$Res> implements $AuthStateCopyWith<$Res> {
-  factory _$AuthStateCopyWith(
-          _AuthState value, $Res Function(_AuthState) then) =
-      __$AuthStateCopyWithImpl<$Res>;
+abstract class _$AuthFormStateCopyWith<$Res>
+    implements $AuthFormStateCopyWith<$Res> {
+  factory _$AuthFormStateCopyWith(
+          _AuthFormState value, $Res Function(_AuthFormState) then) =
+      __$AuthFormStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {bool isSubmitting,
@@ -99,13 +102,15 @@ abstract class _$AuthStateCopyWith<$Res> implements $AuthStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$AuthStateCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
-    implements _$AuthStateCopyWith<$Res> {
-  __$AuthStateCopyWithImpl(_AuthState _value, $Res Function(_AuthState) _then)
-      : super(_value, (v) => _then(v as _AuthState));
+class __$AuthFormStateCopyWithImpl<$Res>
+    extends _$AuthFormStateCopyWithImpl<$Res>
+    implements _$AuthFormStateCopyWith<$Res> {
+  __$AuthFormStateCopyWithImpl(
+      _AuthFormState _value, $Res Function(_AuthFormState) _then)
+      : super(_value, (v) => _then(v as _AuthFormState));
 
   @override
-  _AuthState get _value => super._value as _AuthState;
+  _AuthFormState get _value => super._value as _AuthFormState;
 
   @override
   $Res call({
@@ -113,7 +118,7 @@ class __$AuthStateCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
     Object? showError = freezed,
     Object? authFailureOrSuccessOption = freezed,
   }) {
-    return _then(_AuthState(
+    return _then(_AuthFormState(
       isSubmitting: isSubmitting == freezed
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
@@ -132,8 +137,8 @@ class __$AuthStateCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthState implements _AuthState {
-  const _$_AuthState(
+class _$_AuthFormState implements _AuthFormState {
+  const _$_AuthFormState(
       {required this.isSubmitting,
       required this.showError,
       required this.authFailureOrSuccessOption});
@@ -147,14 +152,14 @@ class _$_AuthState implements _AuthState {
 
   @override
   String toString() {
-    return 'AuthState(isSubmitting: $isSubmitting, showError: $showError, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
+    return 'AuthFormState(isSubmitting: $isSubmitting, showError: $showError, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AuthState &&
+            other is _AuthFormState &&
             const DeepCollectionEquality()
                 .equals(other.isSubmitting, isSubmitting) &&
             const DeepCollectionEquality().equals(other.showError, showError) &&
@@ -171,16 +176,16 @@ class _$_AuthState implements _AuthState {
 
   @JsonKey(ignore: true)
   @override
-  _$AuthStateCopyWith<_AuthState> get copyWith =>
-      __$AuthStateCopyWithImpl<_AuthState>(this, _$identity);
+  _$AuthFormStateCopyWith<_AuthFormState> get copyWith =>
+      __$AuthFormStateCopyWithImpl<_AuthFormState>(this, _$identity);
 }
 
-abstract class _AuthState implements AuthState {
-  const factory _AuthState(
+abstract class _AuthFormState implements AuthFormState {
+  const factory _AuthFormState(
       {required bool isSubmitting,
       required bool showError,
       required Option<Either<AuthFailure, Unit>>
-          authFailureOrSuccessOption}) = _$_AuthState;
+          authFailureOrSuccessOption}) = _$_AuthFormState;
 
   @override
   bool get isSubmitting;
@@ -190,6 +195,6 @@ abstract class _AuthState implements AuthState {
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
-  _$AuthStateCopyWith<_AuthState> get copyWith =>
+  _$AuthFormStateCopyWith<_AuthFormState> get copyWith =>
       throw _privateConstructorUsedError;
 }
