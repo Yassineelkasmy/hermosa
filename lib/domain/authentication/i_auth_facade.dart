@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:hermosa/domain/auth/auth_failure.dart';
-import 'package:hermosa/domain/auth/user.dart';
+import 'package:hermosa/domain/authentication/auth_failure.dart';
+import 'package:hermosa/domain/authentication/user.dart';
 
 abstract class IAuthFacade {
   Future<Option<User>> getSignedUser();
