@@ -26,12 +26,8 @@ class _$AuthFormEventTearOff {
     return const SignInWithFaceboolPressed();
   }
 
-  AuthCheckRequested authCheckRequested() {
-    return const AuthCheckRequested();
-  }
-
-  SignedOut signedOut() {
-    return const SignedOut();
+  SignOutPressed signOutPressed() {
+    return const SignOutPressed();
   }
 }
 
@@ -44,24 +40,21 @@ mixin _$AuthFormEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePresseed,
     required TResult Function() signInWithFacebookPressed,
-    required TResult Function() authCheckRequested,
-    required TResult Function() signedOut,
+    required TResult Function() signOutPressed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -71,8 +64,7 @@ mixin _$AuthFormEvent {
         signInWithGooglePresseed,
     required TResult Function(SignInWithFaceboolPressed value)
         signInWithFacebookPressed,
-    required TResult Function(AuthCheckRequested value) authCheckRequested,
-    required TResult Function(SignedOut value) signedOut,
+    required TResult Function(SignOutPressed value) signOutPressed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -80,8 +72,7 @@ mixin _$AuthFormEvent {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,8 +80,7 @@ mixin _$AuthFormEvent {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -156,8 +146,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePresseed,
     required TResult Function() signInWithFacebookPressed,
-    required TResult Function() authCheckRequested,
-    required TResult Function() signedOut,
+    required TResult Function() signOutPressed,
   }) {
     return signInWithGooglePresseed();
   }
@@ -167,8 +156,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
   }) {
     return signInWithGooglePresseed?.call();
   }
@@ -178,8 +166,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
     required TResult orElse(),
   }) {
     if (signInWithGooglePresseed != null) {
@@ -195,8 +182,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
         signInWithGooglePresseed,
     required TResult Function(SignInWithFaceboolPressed value)
         signInWithFacebookPressed,
-    required TResult Function(AuthCheckRequested value) authCheckRequested,
-    required TResult Function(SignedOut value) signedOut,
+    required TResult Function(SignOutPressed value) signOutPressed,
   }) {
     return signInWithGooglePresseed(this);
   }
@@ -207,8 +193,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
   }) {
     return signInWithGooglePresseed?.call(this);
   }
@@ -219,8 +204,7 @@ class _$SignInWithGooglePressed implements SignInWithGooglePressed {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
     required TResult orElse(),
   }) {
     if (signInWithGooglePresseed != null) {
@@ -279,8 +263,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePresseed,
     required TResult Function() signInWithFacebookPressed,
-    required TResult Function() authCheckRequested,
-    required TResult Function() signedOut,
+    required TResult Function() signOutPressed,
   }) {
     return signInWithFacebookPressed();
   }
@@ -290,8 +273,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
   }) {
     return signInWithFacebookPressed?.call();
   }
@@ -301,8 +283,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
     required TResult orElse(),
   }) {
     if (signInWithFacebookPressed != null) {
@@ -318,8 +299,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
         signInWithGooglePresseed,
     required TResult Function(SignInWithFaceboolPressed value)
         signInWithFacebookPressed,
-    required TResult Function(AuthCheckRequested value) authCheckRequested,
-    required TResult Function(SignedOut value) signedOut,
+    required TResult Function(SignOutPressed value) signOutPressed,
   }) {
     return signInWithFacebookPressed(this);
   }
@@ -330,8 +310,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
   }) {
     return signInWithFacebookPressed?.call(this);
   }
@@ -342,8 +321,7 @@ class _$SignInWithFaceboolPressed implements SignInWithFaceboolPressed {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
     required TResult orElse(),
   }) {
     if (signInWithFacebookPressed != null) {
@@ -358,38 +336,38 @@ abstract class SignInWithFaceboolPressed implements AuthFormEvent {
 }
 
 /// @nodoc
-abstract class $AuthCheckRequestedCopyWith<$Res> {
-  factory $AuthCheckRequestedCopyWith(
-          AuthCheckRequested value, $Res Function(AuthCheckRequested) then) =
-      _$AuthCheckRequestedCopyWithImpl<$Res>;
+abstract class $SignOutPressedCopyWith<$Res> {
+  factory $SignOutPressedCopyWith(
+          SignOutPressed value, $Res Function(SignOutPressed) then) =
+      _$SignOutPressedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AuthCheckRequestedCopyWithImpl<$Res>
+class _$SignOutPressedCopyWithImpl<$Res>
     extends _$AuthFormEventCopyWithImpl<$Res>
-    implements $AuthCheckRequestedCopyWith<$Res> {
-  _$AuthCheckRequestedCopyWithImpl(
-      AuthCheckRequested _value, $Res Function(AuthCheckRequested) _then)
-      : super(_value, (v) => _then(v as AuthCheckRequested));
+    implements $SignOutPressedCopyWith<$Res> {
+  _$SignOutPressedCopyWithImpl(
+      SignOutPressed _value, $Res Function(SignOutPressed) _then)
+      : super(_value, (v) => _then(v as SignOutPressed));
 
   @override
-  AuthCheckRequested get _value => super._value as AuthCheckRequested;
+  SignOutPressed get _value => super._value as SignOutPressed;
 }
 
 /// @nodoc
 
-class _$AuthCheckRequested implements AuthCheckRequested {
-  const _$AuthCheckRequested();
+class _$SignOutPressed implements SignOutPressed {
+  const _$SignOutPressed();
 
   @override
   String toString() {
-    return 'AuthFormEvent.authCheckRequested()';
+    return 'AuthFormEvent.signOutPressed()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is AuthCheckRequested);
+        (other.runtimeType == runtimeType && other is SignOutPressed);
   }
 
   @override
@@ -400,10 +378,9 @@ class _$AuthCheckRequested implements AuthCheckRequested {
   TResult when<TResult extends Object?>({
     required TResult Function() signInWithGooglePresseed,
     required TResult Function() signInWithFacebookPressed,
-    required TResult Function() authCheckRequested,
-    required TResult Function() signedOut,
+    required TResult Function() signOutPressed,
   }) {
-    return authCheckRequested();
+    return signOutPressed();
   }
 
   @override
@@ -411,10 +388,9 @@ class _$AuthCheckRequested implements AuthCheckRequested {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
   }) {
-    return authCheckRequested?.call();
+    return signOutPressed?.call();
   }
 
   @override
@@ -422,12 +398,11 @@ class _$AuthCheckRequested implements AuthCheckRequested {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? signInWithGooglePresseed,
     TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
+    TResult Function()? signOutPressed,
     required TResult orElse(),
   }) {
-    if (authCheckRequested != null) {
-      return authCheckRequested();
+    if (signOutPressed != null) {
+      return signOutPressed();
     }
     return orElse();
   }
@@ -439,10 +414,9 @@ class _$AuthCheckRequested implements AuthCheckRequested {
         signInWithGooglePresseed,
     required TResult Function(SignInWithFaceboolPressed value)
         signInWithFacebookPressed,
-    required TResult Function(AuthCheckRequested value) authCheckRequested,
-    required TResult Function(SignedOut value) signedOut,
+    required TResult Function(SignOutPressed value) signOutPressed,
   }) {
-    return authCheckRequested(this);
+    return signOutPressed(this);
   }
 
   @override
@@ -451,10 +425,9 @@ class _$AuthCheckRequested implements AuthCheckRequested {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
   }) {
-    return authCheckRequested?.call(this);
+    return signOutPressed?.call(this);
   }
 
   @override
@@ -463,135 +436,16 @@ class _$AuthCheckRequested implements AuthCheckRequested {
     TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
     TResult Function(SignInWithFaceboolPressed value)?
         signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
+    TResult Function(SignOutPressed value)? signOutPressed,
     required TResult orElse(),
   }) {
-    if (authCheckRequested != null) {
-      return authCheckRequested(this);
+    if (signOutPressed != null) {
+      return signOutPressed(this);
     }
     return orElse();
   }
 }
 
-abstract class AuthCheckRequested implements AuthFormEvent {
-  const factory AuthCheckRequested() = _$AuthCheckRequested;
-}
-
-/// @nodoc
-abstract class $SignedOutCopyWith<$Res> {
-  factory $SignedOutCopyWith(SignedOut value, $Res Function(SignedOut) then) =
-      _$SignedOutCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class _$SignedOutCopyWithImpl<$Res> extends _$AuthFormEventCopyWithImpl<$Res>
-    implements $SignedOutCopyWith<$Res> {
-  _$SignedOutCopyWithImpl(SignedOut _value, $Res Function(SignedOut) _then)
-      : super(_value, (v) => _then(v as SignedOut));
-
-  @override
-  SignedOut get _value => super._value as SignedOut;
-}
-
-/// @nodoc
-
-class _$SignedOut implements SignedOut {
-  const _$SignedOut();
-
-  @override
-  String toString() {
-    return 'AuthFormEvent.signedOut()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is SignedOut);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() signInWithGooglePresseed,
-    required TResult Function() signInWithFacebookPressed,
-    required TResult Function() authCheckRequested,
-    required TResult Function() signedOut,
-  }) {
-    return signedOut();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? signInWithGooglePresseed,
-    TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
-  }) {
-    return signedOut?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? signInWithGooglePresseed,
-    TResult Function()? signInWithFacebookPressed,
-    TResult Function()? authCheckRequested,
-    TResult Function()? signedOut,
-    required TResult orElse(),
-  }) {
-    if (signedOut != null) {
-      return signedOut();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(SignInWithGooglePressed value)
-        signInWithGooglePresseed,
-    required TResult Function(SignInWithFaceboolPressed value)
-        signInWithFacebookPressed,
-    required TResult Function(AuthCheckRequested value) authCheckRequested,
-    required TResult Function(SignedOut value) signedOut,
-  }) {
-    return signedOut(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
-    TResult Function(SignInWithFaceboolPressed value)?
-        signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
-  }) {
-    return signedOut?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(SignInWithGooglePressed value)? signInWithGooglePresseed,
-    TResult Function(SignInWithFaceboolPressed value)?
-        signInWithFacebookPressed,
-    TResult Function(AuthCheckRequested value)? authCheckRequested,
-    TResult Function(SignedOut value)? signedOut,
-    required TResult orElse(),
-  }) {
-    if (signedOut != null) {
-      return signedOut(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class SignedOut implements AuthFormEvent {
-  const factory SignedOut() = _$SignedOut;
+abstract class SignOutPressed implements AuthFormEvent {
+  const factory SignOutPressed() = _$SignOutPressed;
 }

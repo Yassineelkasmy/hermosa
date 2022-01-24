@@ -20,11 +20,9 @@ class _$AuthFormStateTearOff {
 
   _AuthFormState call(
       {required bool isSubmitting,
-      required bool showError,
       required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption}) {
     return _AuthFormState(
       isSubmitting: isSubmitting,
-      showError: showError,
       authFailureOrSuccessOption: authFailureOrSuccessOption,
     );
   }
@@ -36,7 +34,6 @@ const $AuthFormState = _$AuthFormStateTearOff();
 /// @nodoc
 mixin _$AuthFormState {
   bool get isSubmitting => throw _privateConstructorUsedError;
-  bool get showError => throw _privateConstructorUsedError;
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
       throw _privateConstructorUsedError;
 
@@ -52,7 +49,6 @@ abstract class $AuthFormStateCopyWith<$Res> {
       _$AuthFormStateCopyWithImpl<$Res>;
   $Res call(
       {bool isSubmitting,
-      bool showError,
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
 
@@ -68,17 +64,12 @@ class _$AuthFormStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isSubmitting = freezed,
-    Object? showError = freezed,
     Object? authFailureOrSuccessOption = freezed,
   }) {
     return _then(_value.copyWith(
       isSubmitting: isSubmitting == freezed
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
-              as bool,
-      showError: showError == freezed
-          ? _value.showError
-          : showError // ignore: cast_nullable_to_non_nullable
               as bool,
       authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
           ? _value.authFailureOrSuccessOption
@@ -97,7 +88,6 @@ abstract class _$AuthFormStateCopyWith<$Res>
   @override
   $Res call(
       {bool isSubmitting,
-      bool showError,
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
 
@@ -115,17 +105,12 @@ class __$AuthFormStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isSubmitting = freezed,
-    Object? showError = freezed,
     Object? authFailureOrSuccessOption = freezed,
   }) {
     return _then(_AuthFormState(
       isSubmitting: isSubmitting == freezed
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
-              as bool,
-      showError: showError == freezed
-          ? _value.showError
-          : showError // ignore: cast_nullable_to_non_nullable
               as bool,
       authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
           ? _value.authFailureOrSuccessOption
@@ -139,20 +124,16 @@ class __$AuthFormStateCopyWithImpl<$Res>
 
 class _$_AuthFormState implements _AuthFormState {
   const _$_AuthFormState(
-      {required this.isSubmitting,
-      required this.showError,
-      required this.authFailureOrSuccessOption});
+      {required this.isSubmitting, required this.authFailureOrSuccessOption});
 
   @override
   final bool isSubmitting;
-  @override
-  final bool showError;
   @override
   final Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption;
 
   @override
   String toString() {
-    return 'AuthFormState(isSubmitting: $isSubmitting, showError: $showError, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
+    return 'AuthFormState(isSubmitting: $isSubmitting, authFailureOrSuccessOption: $authFailureOrSuccessOption)';
   }
 
   @override
@@ -162,7 +143,6 @@ class _$_AuthFormState implements _AuthFormState {
             other is _AuthFormState &&
             const DeepCollectionEquality()
                 .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality().equals(other.showError, showError) &&
             const DeepCollectionEquality().equals(
                 other.authFailureOrSuccessOption, authFailureOrSuccessOption));
   }
@@ -171,7 +151,6 @@ class _$_AuthFormState implements _AuthFormState {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(showError),
       const DeepCollectionEquality().hash(authFailureOrSuccessOption));
 
   @JsonKey(ignore: true)
@@ -183,14 +162,11 @@ class _$_AuthFormState implements _AuthFormState {
 abstract class _AuthFormState implements AuthFormState {
   const factory _AuthFormState(
       {required bool isSubmitting,
-      required bool showError,
       required Option<Either<AuthFailure, Unit>>
           authFailureOrSuccessOption}) = _$_AuthFormState;
 
   @override
   bool get isSubmitting;
-  @override
-  bool get showError;
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
   @override

@@ -8,13 +8,11 @@ part 'auth_form_state.freezed.dart';
 class AuthFormState with _$AuthFormState {
   const factory AuthFormState({
     required bool isSubmitting,
-    required bool showError,
     required Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption,
   }) = _AuthFormState;
 
   factory AuthFormState.initial() => AuthFormState(
         isSubmitting: false,
-        showError: false,
         authFailureOrSuccessOption: none(),
       );
 }
