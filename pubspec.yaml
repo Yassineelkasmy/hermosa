@@ -21,6 +21,7 @@ dependencies:
   flutter_hooks: ^0.18.2
   hooks_riverpod: ^1.0.3
   auto_route:
+  google_fonts: ^2.2.0
 
 dev_dependencies:
   flutter_test:
