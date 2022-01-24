@@ -5,11 +5,11 @@ import 'package:hermosa/domain/authentication/auth_failure.dart';
 import 'package:hermosa/domain/authentication/i_auth_facade.dart';
 import 'package:hermosa/domain/authentication/user.dart';
 
-class FireBaseAuth implements IAuthFacade {
+class FireBaseAuthFacade implements IAuthFacade {
   final FirebaseAuth _firebaseAuth;
   final GoogleSignIn _googleSignIn;
 
-  FireBaseAuth(this._firebaseAuth, this._googleSignIn);
+  FireBaseAuthFacade(this._firebaseAuth, this._googleSignIn);
 
   @override
   Future<Option<User>> getSignedUser() async {

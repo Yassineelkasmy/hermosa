@@ -22,7 +22,7 @@ class AuthFormStateController extends StateNotifier<AuthFormState> {
     }, signInWithFacebookPressed: (_) async {
       throw UnimplementedError();
     }, signOutPressed: (_) async {
-      throw UnimplementedError();
+      await _authFacade.signOut();
     });
   }
 }
