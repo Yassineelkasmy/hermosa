@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hermosa/presentation/routes/router.gr.dart';
+import 'package:hermosa/theme/theme_constants.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AppWidget extends HookConsumerWidget {
@@ -11,6 +12,7 @@ class AppWidget extends HookConsumerWidget {
       routeInformationParser: _appRouter.defaultRouteParser(),
       routerDelegate: _appRouter.delegate(),
       title: "Hermosa",
+      theme: themeData,
       debugShowCheckedModeBanner: false,
     );
   }

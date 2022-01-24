@@ -22,6 +22,7 @@ dependencies:
   hooks_riverpod: ^1.0.3
   auto_route:
   google_fonts: ^2.2.0
+  flutter_svg: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -33,4 +34,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
 

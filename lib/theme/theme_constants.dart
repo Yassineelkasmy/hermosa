@@ -9,13 +9,15 @@ const bodyColor = Colors.black45;
 
 // Padding & Radius
 const defaultBorderRadius = 16.0;
-const defaultPadding = 14.0;
+const defaultVerticalPadding = 8.0;
+const defaultHorizontalPadding = 14.0;
 
 // Buttons
 final elevatedButtonTheme = ElevatedButtonThemeData(
   style: TextButton.styleFrom(
     backgroundColor: primaryColor,
-    padding: const EdgeInsets.all(defaultPadding),
+    padding: const EdgeInsets.symmetric(
+        vertical: defaultVerticalPadding, horizontal: defaultHorizontalPadding),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
     ),
@@ -39,6 +41,7 @@ ThemeData themeData = ThemeData(
   textTheme: GoogleFonts.montserratTextTheme(ThemeData.light().textTheme),
   brightness: Brightness.light,
   primaryColor: primaryColor,
+  scaffoldBackgroundColor: secondaryColor,
   floatingActionButtonTheme: floatingActionButtonTheme,
   elevatedButtonTheme: elevatedButtonTheme,
   inputDecorationTheme: inputDecorationTheme,
