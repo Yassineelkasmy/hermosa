@@ -1,10 +1,11 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:hermosa/application/auth/auth_event.dart';
 import 'package:hermosa/application/auth/auth_form/auth_form_state.dart';
 import 'package:hermosa/application/auth/auth_form/auth_form_controller.dart';
 import 'package:hermosa/application/auth/auth_state.dart';
 import 'package:hermosa/application/auth/auth_controller.dart';
+import 'package:hermosa/domain/auth/user.dart';
 import 'package:hermosa/infrastructure/auth/firebase_auth.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -23,20 +24,27 @@ final authtProvider =
     StateNotifierProvider.autoDispose<AuthController, AuthState>((ref) {
   final fireBaseAuthFacade = ref.watch(firebaseAuthFacadeProvider);
 
-  AuthController authStateController = AuthController(fireBaseAuthFacade);
-  return authStateController
-    ..mapEventToState(const AuthEvent.authCheckRequested());
+  AuthController authController = AuthController(fireBaseAuthFacade);
+  return authController..mapEventToState(const AuthEvent.authCheckRequested());
 });
 
 final authFormProvider =
     StateNotifierProvider.autoDispose<AuthFormController, AuthFormState>(
   (ref) {
     final fireBaseAuthFacade = ref.watch(firebaseAuthFacadeProvider);
-    final authStateController = ref.watch(authtProvider.notifier);
-    final authFormStateController = AuthFormController(
+    final authController = ref.watch(authtProvider.notifier);
+    final authFormController = AuthFormController(
       fireBaseAuthFacade,
-      authStateController,
+      authController,
     );
-    return authFormStateController;
+    return authFormController;
   },
 );
+
+final userProvider = Provider.autoDispose<User?>((ref) {
+  final authState = ref.watch(authtProvider);
+  return authState.maybeMap(
+    authenticated: (authenticated) => authenticated.user,
+    orElse: () => null,
+  );
+});
