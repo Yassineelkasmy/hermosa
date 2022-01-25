@@ -23,6 +23,7 @@ dependencies:
   auto_route:
   google_fonts: ^2.2.0
   flutter_svg: ^1.0.3
+  connectivity_plus: ^2.2.0
 
 dev_dependencies:
   flutter_test:
