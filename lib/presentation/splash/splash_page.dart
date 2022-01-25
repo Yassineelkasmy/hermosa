@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:hermosa/providers/auth_provider.dart';
 import 'package:hermosa/presentation/routes/router.gr.dart';
+import 'package:hermosa/providers/auth/auth_providers.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class SplashPage extends HookConsumerWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hermosa/application/auth/auth_form/auth_form_event.dart';
-import 'package:hermosa/providers/auth_form_provider.dart';
 import 'package:hermosa/presentation/utils/add_space.dart';
+import 'package:hermosa/providers/auth/auth_providers.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class LoginPage extends HookConsumerWidget {

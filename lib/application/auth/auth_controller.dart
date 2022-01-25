@@ -3,8 +3,8 @@ import 'package:hermosa/application/auth/auth_state.dart';
 import 'package:hermosa/domain/auth/i_auth_facade.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class AuthStateController extends StateNotifier<AuthState> {
-  AuthStateController(this._authFacade) : super(const AuthState.initial());
+class AuthController extends StateNotifier<AuthState> {
+  AuthController(this._authFacade) : super(const AuthState.initial());
 
   final IAuthFacade _authFacade;
 
