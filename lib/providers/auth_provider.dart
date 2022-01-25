@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:hermosa/application/authentication/auth_event.dart';
-import 'package:hermosa/application/authentication/auth_state.dart';
-import 'package:hermosa/application/authentication/auth_state_controller.dart';
-import 'package:hermosa/infrastructure/authentication/firebase_auth.dart';
+import 'package:hermosa/application/auth/auth_event.dart';
+import 'package:hermosa/application/auth/auth_state.dart';
+import 'package:hermosa/application/auth/auth_state_controller.dart';
+import 'package:hermosa/infrastructure/auth/firebase_auth.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final authtProvider =

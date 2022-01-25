@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hermosa/domain/authentication/auth_failure.dart';
+import 'package:hermosa/domain/auth/auth_failure.dart';
 
 part 'auth_form_state.freezed.dart';
 

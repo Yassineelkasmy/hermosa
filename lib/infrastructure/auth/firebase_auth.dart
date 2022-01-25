@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:hermosa/domain/authentication/auth_failure.dart';
-import 'package:hermosa/domain/authentication/i_auth_facade.dart';
-import 'package:hermosa/domain/authentication/user.dart';
+import 'package:hermosa/domain/auth/auth_failure.dart';
+import 'package:hermosa/domain/auth/i_auth_facade.dart';
+import 'package:hermosa/domain/auth/user.dart';
 
 class FireBaseAuthFacade implements IAuthFacade {
   final FirebaseAuth _firebaseAuth;

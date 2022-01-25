@@ -1,6 +1,6 @@
-import 'package:hermosa/application/authentication/auth_event.dart';
-import 'package:hermosa/application/authentication/auth_state.dart';
-import 'package:hermosa/domain/authentication/i_auth_facade.dart';
+import 'package:hermosa/application/auth/auth_event.dart';
+import 'package:hermosa/application/auth/auth_state.dart';
+import 'package:hermosa/domain/auth/i_auth_facade.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AuthStateController extends StateNotifier<AuthState> {

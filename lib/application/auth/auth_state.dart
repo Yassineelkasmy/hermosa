@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hermosa/domain/authentication/user.dart';
+import 'package:hermosa/domain/auth/user.dart';
 
 part 'auth_state.freezed.dart';
 

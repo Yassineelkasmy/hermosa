@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:hermosa/application/authentication/auth_provider.dart';
-import 'package:hermosa/application/authentication/auth_state.dart';
+import 'package:hermosa/providers/auth_provider.dart';
 import 'package:hermosa/presentation/routes/router.gr.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -10,11 +9,12 @@ class SplashPage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final AuthState authState = ref.watch(authtProvider);
+    final authState = ref.watch(authtProvider);
     authState.map(
       initial: (_) {},
-      authenticated: (_) => AutoRouter.of(context).push(HomePageRoute()),
-      unauthenticated: (_) => AutoRouter.of(context).push(LoginPageRoute()),
+      authenticated: (_) => AutoRouter.of(context).push(const HomePageRoute()),
+      unauthenticated: (_) =>
+          AutoRouter.of(context).push(const LoginPageRoute()),
     );
     return const Scaffold(
       body: Center(

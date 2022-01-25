@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import 'package:hermosa/application/authentication/auth_form/auth_form_event.dart';
-import 'package:hermosa/application/authentication/auth_form/auth_form_state.dart';
-import 'package:hermosa/domain/authentication/i_auth_facade.dart';
+import 'package:hermosa/application/auth/auth_form/auth_form_event.dart';
+import 'package:hermosa/application/auth/auth_form/auth_form_state.dart';
+import 'package:hermosa/domain/auth/i_auth_facade.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AuthFormStateController extends StateNotifier<AuthFormState> {
-  AuthFormStateController(AuthFormState state, this._authFacade) : super(state);
+  AuthFormStateController(this._authFacade) : super(AuthFormState.initial());
   final IAuthFacade _authFacade;
 
   Future mapEventToState(AuthFormEvent event) {
