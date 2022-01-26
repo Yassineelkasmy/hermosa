@@ -45,4 +45,10 @@ ThemeData themeData = ThemeData(
   floatingActionButtonTheme: floatingActionButtonTheme,
   elevatedButtonTheme: elevatedButtonTheme,
   inputDecorationTheme: inputDecorationTheme,
+  iconTheme: const IconThemeData(
+    color: primaryColor,
+  ),
+  appBarTheme: const AppBarTheme(
+    backgroundColor: secondaryColor,
+  ),
 );

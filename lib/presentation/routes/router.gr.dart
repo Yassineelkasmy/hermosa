@@ -32,8 +32,10 @@ class AppRouter extends _i4.RootStackRouter {
           routeData: routeData, child: const _i2.LoginPage());
     },
     HomePageRoute.name: (routeData) {
+      final args = routeData.argsAs<HomePageRouteArgs>(
+          orElse: () => const HomePageRouteArgs());
       return _i4.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i3.HomePage());
+          routeData: routeData, child: _i3.HomePage(key: args.key));
     }
   };
 
@@ -63,8 +65,21 @@ class LoginPageRoute extends _i4.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.HomePage]
-class HomePageRoute extends _i4.PageRouteInfo<void> {
-  const HomePageRoute() : super(HomePageRoute.name, path: '/home-page');
+class HomePageRoute extends _i4.PageRouteInfo<HomePageRouteArgs> {
+  HomePageRoute({_i5.Key? key})
+      : super(HomePageRoute.name,
+            path: '/home-page', args: HomePageRouteArgs(key: key));
 
   static const String name = 'HomePageRoute';
+}
+
+class HomePageRouteArgs {
+  const HomePageRouteArgs({this.key});
+
+  final _i5.Key? key;
+
+  @override
+  String toString() {
+    return 'HomePageRouteArgs{key: $key}';
+  }
 }

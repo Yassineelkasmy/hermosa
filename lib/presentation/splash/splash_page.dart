@@ -12,7 +12,7 @@ class SplashPage extends HookConsumerWidget {
     final authState = ref.watch(authtProvider);
     authState.map(
       initial: (_) {},
-      authenticated: (_) => AutoRouter.of(context).push(const HomePageRoute()),
+      authenticated: (_) => AutoRouter.of(context).push(HomePageRoute()),
       unauthenticated: (_) =>
           AutoRouter.of(context).push(const LoginPageRoute()),
     );
